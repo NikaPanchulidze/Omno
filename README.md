@@ -19,15 +19,12 @@ Fastify-based API that integrates with the Omno API to create a transaction and 
 2. **Navigate to the Project Directory:**
    ```
    cd Omno
-
 3. **Download necessary libraries:**
    ```
    npm i
-
 4. **Start project locally:**
    ```
    npm start
-
 ## Project Structure
 
 - **`src/`**
