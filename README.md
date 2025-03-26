@@ -166,28 +166,28 @@ You must change "hookUrl", "callback" and "callbackFail with Ngrok forwarding ur
 
 Now you have three options:
 
-  1 - If you want successful payment**  
+  1 - If you want successful payment
   2 - If you want failed payment  
   3 - If you want to use 3DS to confirm or reject payment  
 
 1. Successful Transaction:
-Card Number: 4539 1488 0343 6467
-Expiry Date: 12/29
-CVC: 123
-Cardholder Name: Anything
-Outcome: Transaction will be processed successfully.
+  Card Number: 4539 1488 0343 6467
+  Expiry Date: 12/29
+  CVC: 123
+  Cardholder Name: Anything
+  Outcome: Transaction will be processed successfully.
 2. Failed Transaction:
-Card Number: 6011 1111 1111 1117
-Expiry Date: 12/29
-CVC: 123
-Cardholder Name: Anything
-Outcome: Transaction will fail.
+  Card Number: 6011 1111 1111 1117
+  Expiry Date: 12/29
+  CVC: 123
+  Cardholder Name: Anything
+  Outcome: Transaction will fail.
 3. 3D Secure Authentication Required:
-Card Number: 3782 8224 6310 005
-Expiry Date: 12/29
-CVC: 123
-Cardholder Name: Anything
-Outcome: Transaction will require 3D Secure authentication.
+  Card Number: 3782 8224 6310 005
+  Expiry Date: 12/29
+  CVC: 123
+  Cardholder Name: Anything
+  Outcome: Transaction will require 3D Secure authentication.
 
 If you choose first or second one, after you click pay you will be redirected to relevant page.
 
