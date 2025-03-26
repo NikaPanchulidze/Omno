@@ -11,6 +11,7 @@ dotenv.config({ path: "./config.env" });
 
 // Server setup
 const startServer = async () => {
+  // ATTENTION! If you run docker host must be '0.0.0.0'
   fastify.listen({ port: 3000, host: '127.0.0.1' }, (err, address) => {
     if (err) throw err;
     console.log(`Server running at ${address}`);
