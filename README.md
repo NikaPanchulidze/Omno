@@ -65,7 +65,7 @@ Make sure node application and ngrok are run from same command promt. For exampl
 Now, when you have already started node server, you should start Ngrok in your command line.
 
 **Start Ngrok:**
-    ```bash
+    ```
     ngrok http http://127.0.0.1:3000
 
 Make sure (http://127.0.0.1:3000) this part is same as your node server running host address.
