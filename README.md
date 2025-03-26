@@ -166,9 +166,9 @@ You must change "hookUrl", "callback" and "callbackFail with Ngrok forwarding ur
 
 Now you have three options:
 
-**1 - If you want successful payment**
-**2 - If you want failed payment**
-**3 - If you want to use 3DS to confirm or reject payment**
+1. **If you want successful payment**
+2. **If you want failed payment**
+3. **If you want to use 3DS to confirm or reject payment**
 
 1. Successful Transaction:
 Card Number: 4539 1488 0343 6467
