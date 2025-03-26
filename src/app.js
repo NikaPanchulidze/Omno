@@ -5,6 +5,7 @@ const swaggerUi = require('@fastify/swagger-ui');
 const transactionRoutes = require("./routes/transaction-router");
 const { CustomError } = require("./errors");
 
+// Swagger setup
 fastify.register(swagger, {
   swagger: {
     info: {
@@ -19,8 +20,10 @@ fastify.register(swaggerUi, {
   routePrefix: '/documentation',
 });
 
+// Register routes
 fastify.register(transactionRoutes);
 
+// Error handling
 fastify.setErrorHandler((error, request, reply) => {
   if (error.validation) {
     reply.status(400).send({

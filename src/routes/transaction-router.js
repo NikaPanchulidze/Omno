@@ -4,6 +4,7 @@ const transactionSchema = require("../schemas/transaction-schema");
 const responseSchema = require("../schemas/response-schema");
 
 async function transactionRoutes(fastify, options) {
+  // Using preHandler hook for handling authentication
   fastify.post("/create-transaction", { 
     preHandler: authenticate, 
     schema: transactionSchema 

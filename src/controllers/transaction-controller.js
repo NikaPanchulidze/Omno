@@ -24,6 +24,7 @@ exports.createTransaction = async function (request, reply) {
 
 exports.webhook = async function (request, reply) {
   console.log(request.body)
+  // Handling 3DS if browser does not redirect autmootically
   if (request.body.status === "Pending3DS") {
     const redirectUrl = request.body["3dsRedirectUrl"];
     console.log("-----------------------------------------------------------")
