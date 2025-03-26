@@ -204,7 +204,7 @@ You can see all the responses from webhook in terminal.
 You can use docker to run node application. 
 
 ## ⚠️ **ATTENTION:** 
-In server.js HOST MUST BE 0.0.0.0
+In server.js HOST MUST BE 0.0.0.0  
 If you use docker, you must not run the node application locally.
 
 1. **Make sure you have right folder path selected /yourpath/Omno**
