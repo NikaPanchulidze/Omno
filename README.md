@@ -41,7 +41,7 @@ Fastify-based API that integrates with the Omno API to create a transaction and 
 
 There are two POST routes you can use. First one to create transaction and other one for server to receive webhooks. You can you http://localhost:3000/documentation (localhost can be different in your case) in your browser to use swagger in order to send POST requests. 
 
-Ngrok is needed to receive webhooks locally. When you create a transaction, Omno server send webhook. If we want to catch it, we need to make our local host to be reachable from outside world. That's why we use Ngrok to get public address for local host.
+Ngrok is needed to receive webhooks locally. When you create a transaction, Omno server sends webhook. If we want to catch it, we need to make our localhost reachable from outside world. That's why we use Ngrok to get public address for localhost.
 
 ## How to install Ngrok
 
@@ -56,7 +56,7 @@ Ngrok is needed to receive webhooks locally. When you create a transaction, Omno
 (I have WSL2 on windows 11 and use it insdead or command prompt)
 
 ## ⚠️ **ATTENTION:** 
-Make sure node application and ngrok are run from same command promt. For example mixing wsl2 with windows terminal can cause different localhost and Ngrok will not work.
+Make sure node application and ngrok run from same command prompt. For example mixing wsl2 with windows terminal can cause different localhost addresses and Ngrok will not work.
 
 ## How to use Ngrok
 Now, when you have already started node server, you should start Ngrok in your command line.
@@ -66,7 +66,7 @@ Now, when you have already started node server, you should start Ngrok in your c
 ngrok http http://127.0.0.1:3000
 ```
 
-Make sure (http://127.0.0.1:3000) this part is same as your node server running host address.
+Make sure (http://127.0.0.1:3000) this part is same as your node server host address.
 
 After you run command, you should get screen like this:
 
@@ -186,7 +186,7 @@ CVC: 123
 Cardholder Name: Anything  
 Outcome: Transaction will require 3D Secure authentication.  
 
-If you choose first or second one, after you click pay you will be redirected to relevant page.
+If you choose first or second one, after you click "Pay" you will be redirected to relevant page.
 
 You can check terminal to see webhook details.
 
